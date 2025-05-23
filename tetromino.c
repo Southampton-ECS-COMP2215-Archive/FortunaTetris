@@ -1,6 +1,9 @@
 #include "tetromino.h"
 #include <stdio.h>
 
+volatile uint8_t block_grid [4][4];
+volatile uint8_t virtual_grid [4][4];
+
 int leftmost_block(){
 	int i, j = 0;
 	for ( i = 0; i < 4; i++ ){
